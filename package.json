@@ -1,0 +1,27 @@
+{
+  "name": "vscode-akita-angular-snippets",
+  "publisher": "Nicole",
+  "displayName": "Akita Angular Snippets",
+  "description": "Akita Angular Snippets",
+  "version": "0.0.1",
+  "icon": "assets/images/icon.png",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "author": {
+    "name": "Nicole"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "angular",
+    "akita"
+  ],
+  "contributes": {
+    "snippets": [{
+      "language": "typescript",
+      "path": "./snippets/snippets.json"
+    }]
+  }
+}
