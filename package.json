@@ -5,11 +5,15 @@
   "description": "Akita Angular Snippets",
   "version": "0.0.1",
   "icon": "assets/images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicolehj/vscode-akita-snippets-files"
+  },
   "engines": {
     "vscode": "^1.22.0"
   },
   "author": {
-    "name": "Nicole"
+    "name": "Nicole Jing"
   },
   "categories": [
     "Snippets"
