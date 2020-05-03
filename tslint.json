@@ -1,0 +1,78 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-airbnb"
+  ],
+  "rules": {
+    "file-header": [
+      true,
+      "Copyright Nicole Inc\\."
+    ],
+    "no-console": [
+      true,
+      "log"
+    ],
+    "no-construct": true,
+    "no-duplicate-imports": true,
+    "no-duplicate-variable": true,
+    "no-jasmine-focus": true,
+    "no-var-keyword": true,
+    "prefer-literal": [
+      true,
+      "object"
+    ],
+    "require-internal-with-underscore": true,
+    "no-toplevel-property-access": [
+      true
+    ],
+    "semicolon": [
+      true
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords"
+    ],
+    "no-inner-declarations": [
+      true,
+      "function"
+    ],
+    "no-debugger": true,
+    "?no-empty-interface": "不允许空接口",
+    "no-empty-interface": true,
+    "?no-parameter-reassignment": "不允许修改方法输入参数",
+    "no-parameter-reassignment": true
+  },
+  "jsRules": {
+    "file-header": [
+      true,
+      "Copyright Nicole Inc\\."
+    ],
+    "no-console": [
+      true,
+      "log"
+    ],
+    "no-duplicate-imports": true,
+    "no-duplicate-variable": true,
+    "no-jasmine-focus": true,
+    "require-internal-with-underscore": true,
+    "semicolon": [
+      true
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords"
+    ],
+    "no-inner-declarations": [
+      true,
+      "function"
+    ]
+  },
+  "rulesDirectory": [],
+  "linterOptions": {
+    "exclude": [
+      "./templates/**/*",
+      "./out/**/*"
+    ]
+  }
+}

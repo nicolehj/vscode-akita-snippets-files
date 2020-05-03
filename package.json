@@ -18,10 +18,42 @@
     "angular",
     "akita"
   ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out",
   "contributes": {
-    "snippets": [{
-      "language": "typescript",
-      "path": "./snippets/snippets.json"
-    }]
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "extension.akita-page",
+        "title": "Akita Page"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.akita-page"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "tsc": "npm run tsc-templates && tsc -p ./",
+    "start": "npm run tsc-templates && tsc -watch -p ./",
+    "tsc-templates": "copyfiles \"templates/**/*.tmpl\" \"./out\"",
+    "tslint": "./node_modules/tslint/bin/tslint -c tslint.json \"src/**/*.ts\""
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.44.0",
+    "copyfiles": "^2.2.0",
+    "tslint": "^6.1.2",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.8.3"
   }
 }
