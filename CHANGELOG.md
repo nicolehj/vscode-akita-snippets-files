@@ -1,3 +1,6 @@
-# Change Log
+## Akita Snippets Files Changelog
 
-All notable changes to the "Akita Angular Snippets" extension will be documented in this file.
+### 1.0.0
+
+* Added akita-cli for file generation
+* Akita-Snippets-Files now supports custom prefixes, different css type, and custom template

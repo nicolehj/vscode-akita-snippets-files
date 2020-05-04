@@ -1,0 +1,19 @@
+import { Injectable } from '@angular/core';
+import { Query } from '@datorama/akita';
+import { <%= classify(name) %>Store } from '../store/<%= dasherize(name) %>.store';
+import { <%= classify(name) %>State } from '../store/<%= dasherize(name) %>.model';
+
+/**
+ * <%= classify(name) %> query
+ *
+ * @export
+ * @class <%= classify(name) %>Query
+ * @extends {Query<<%= classify(name) %>State>}
+ */
+@Injectable({ providedIn: 'root' })
+export class <%= classify(name) %>Query extends Query<<%= classify(name) %>State> {
+
+  constructor(protected store: <%= classify(name) %>Store) {
+    super(store);
+  }
+}

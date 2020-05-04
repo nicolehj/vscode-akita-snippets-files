@@ -1,0 +1,14 @@
+import { Injectable } from '@angular/core';
+import { <%= classify(name) %>Store } from '../store/<%= dasherize(name) %>.store';
+
+/**
+ * <%= classify(name) %> service
+ *
+ * @export
+ * @class <%= classify(name) %>Service
+ */
+@Injectable({ providedIn: 'root' })
+export class <%= classify(name) %>Service {
+
+  constructor(private <%= camelize(name) %>Store: <%= classify(name) %>Store) { }
+}
