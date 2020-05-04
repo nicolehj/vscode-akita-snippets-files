@@ -1,22 +1,25 @@
 {
-  "name": "vscode-akita-angular-snippets",
-  "publisher": "Nicole",
-  "displayName": "Akita Angular Snippets",
-  "description": "Akita Angular Snippets",
-  "version": "0.0.1",
+  "name": "snippets-template",
+  "publisher": "Nicole Huang Jing",
+  "displayName": "Akita Snippets & File Templates",
+  "description": "Akita Snippets and File Templates",
+  "version": "1.0.0",
   "icon": "assets/images/icon.png",
   "engines": {
     "vscode": "^1.22.0"
   },
   "author": {
-    "name": "Nicole"
+    "name": "Nicole Huang Jing"
   },
   "categories": [
     "Snippets"
   ],
   "keywords": [
     "angular",
-    "akita"
+    "akita",
+    "template",
+    "file",
+    "file template"
   ],
   "activationEvents": [
     "*"
@@ -29,16 +32,64 @@
         "path": "./snippets/snippets.json"
       }
     ],
+    "configuration": {
+      "title": "Akita Snippets and File Templates",
+      "properties": {
+        "akita.menu.prefix": {
+          "type": "string",
+          "default": "app",
+          "description": "Prefix of selector."
+        },
+        "akita.menu.style": {
+          "type": "string",
+          "default": "scss",
+          "enum": [
+            "css",
+            "scss"
+          ],
+          "description": "Style type."
+        },
+        "akita.menu.templatePath": {
+          "type": "string",
+          "description": "Template path eg. 'src/templates'."
+        }
+      }
+    },
     "commands": [
       {
         "command": "extension.akita-page",
         "title": "Akita Page"
+      },
+      {
+        "command": "extension.akita-store",
+        "title": "Akita Store"
+      },
+      {
+        "command": "extension.akita-query",
+        "title": "Akita Query"
+      },
+      {
+        "command": "extension.akita-service",
+        "title": "Akita Service"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "extension.akita-page"
+          "command": "extension.akita-page",
+          "group": "Akita"
+        },
+        {
+          "command": "extension.akita-store",
+          "group": "Akita@1"
+        },
+        {
+          "command": "extension.akita-query",
+          "group": "Akita@2"
+        },
+        {
+          "command": "extension.akita-service",
+          "group": "Akita@3"
         }
       ]
     }
@@ -49,9 +100,17 @@
     "tsc-templates": "copyfiles \"templates/**/*.tmpl\" \"./out\"",
     "tslint": "./node_modules/tslint/bin/tslint -c tslint.json \"src/**/*.ts\""
   },
+  "dependencies": {
+    "mem-fs": "^1.1.3",
+    "mem-fs-editor": "file:package/mem-fs-editor"
+  },
   "devDependencies": {
+    "@types/mem-fs": "^1.1.2",
+    "@types/mem-fs-editor": "^5.1.1",
+    "@types/node": "^13.13.4",
     "@types/vscode": "^1.44.0",
     "copyfiles": "^2.2.0",
+    "ts-loader": "^7.0.2",
     "tslint": "^6.1.2",
     "tslint-config-airbnb": "^5.11.2",
     "typescript": "^3.8.3"

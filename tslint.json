@@ -1,8 +1,7 @@
 {
   "defaultSeverity": "error",
   "extends": [
-    "tslint:recommended",
-    "tslint-config-airbnb"
+    "tslint:recommended"
   ],
   "rules": {
     "file-header": [
@@ -10,7 +9,7 @@
       "Copyright Nicole Inc\\."
     ],
     "no-console": [
-      true,
+      false,
       "log"
     ],
     "no-construct": true,
@@ -41,7 +40,13 @@
     "?no-empty-interface": "不允许空接口",
     "no-empty-interface": true,
     "?no-parameter-reassignment": "不允许修改方法输入参数",
-    "no-parameter-reassignment": true
+    "no-parameter-reassignment": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "max-line-length": {
+      "options": {
+        "limit": 200
+      }
+    }
   },
   "jsRules": {
     "file-header": [

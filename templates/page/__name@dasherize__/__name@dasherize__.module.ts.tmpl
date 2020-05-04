@@ -1,0 +1,18 @@
+import { NgModule } from '@angular/core';
+import { <%= classify(name) %>Component } from './pages/<%= dasherize(name) %>.component';
+
+/**
+ * <%= classify(name) %> module
+ *
+ * @export
+ * @class <%= classify(name) %>Module
+ */
+@NgModule({
+  declarations: [
+    <%= classify(name) %>Component
+  ],
+  entryComponents: [
+    <%= classify(name) %>Component
+  ]
+})
+export class <%= classify(name) %>Module { }
