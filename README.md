@@ -5,11 +5,11 @@ This extension for Visual Studio Code adds **Akita snippets** for Angular for Ty
 
 ## > Snippets
 
-All code snippets are based on https://datorama.github.io/akita/
+All code snippets are based on https://datorama.github.io/akita/.
 
-![Snippets usage](assets/gif/snippets.gif)
+![Snippets usage](https://nicolehj.github.io/vscode-akita-snippets-files/assets/gif/snippets.gif)
 
-#### Snippets Prefixes
+### Snippets Prefixes
 
 | Prefix | Description |
 | :- | :- |
@@ -19,15 +19,17 @@ All code snippets are based on https://datorama.github.io/akita/
 | ak-entity-store | Akita Entity Store Snippets |
 | ak-entity-query | Akita Entity Query Snippets |
 
+---
+
 ## > File Templates
 
-==Right click on a folder== in your current project. 
+**Right click on a folder** in your current project. 
 You can find multiple options been added to the context menu:
 
-![Template page usage](assets/gif/template_page.gif)
-![Template store usage](assets/gif/template_store.gif)
+![Template page usage](https://nicolehj.github.io/vscode-akita-snippets-files/assets/gif/template_page.gif)
+![Template store usage](https://nicolehj.github.io/vscode-akita-snippets-files/assets/gif/template_store.gif)
 
-#### File Templates Options
+### File Templates Options
 
 | Menu Options |
 | :- |
@@ -36,9 +38,9 @@ You can find multiple options been added to the context menu:
 | Akita Query |
 | Akita Service |
 
-#### File Templates Configurations
+### File Templates Configurations
 
-![Configurations](assets/images/setting.png)
+![Configurations](https://nicolehj.github.io/vscode-akita-snippets-files/assets/images/setting.png)
 
 ** Override default configurations in `settings.json`:
 
@@ -54,13 +56,15 @@ You can find multiple options been added to the context menu:
 }
 ```
 
+---
+
 ## > Custom Templates
 
-**Custom templates can be used for any languages you like !!!**
+**!!! Custom templates can be used for any languages you like 👍👍👍!!!**
 
 You can [download][repository_templates] the templates from this [repository][repository_templates] and start using it. 
 
-![Custom Templates](assets/gif/template_custom.gif)
+![Custom Templates](https://nicolehj.github.io/vscode-akita-snippets-files/assets/gif/template_custom.gif)
 
 ---
 
