@@ -20,6 +20,8 @@ export interface ICommand {
 export enum CommandType {
   /** templates/page */
   Page = 'page',
+  /** templates/component */
+  Component = 'component',
   /** templates/store */
   Store = 'store',
   /** templates/query */
@@ -34,6 +36,8 @@ export enum CommandType {
 export enum CommandKey {
   /** command/page */
   Page = 'extension.akita-page',
+  /** command/component */
+  Component = 'extension.akita-component',
   /** command/store */
   Store = 'extension.akita-store',
   /** command/query */
@@ -63,6 +67,16 @@ export const Commands = new Map<CommandKey, ICommand>([
       type: CommandType.Page,
       handle: (cli: AkitaCli, params: CommandParams) => {
         cli.generateResources({ ...params, type: CommandType.Page });
+      },
+    },
+  ],
+  [
+    CommandKey.Component,
+    {
+      placeholder: 'Akita component',
+      type: CommandType.Component,
+      handle: (cli: AkitaCli, params: CommandParams) => {
+        cli.generateResources({ ...params, type: CommandType.Component });
       },
     },
   ],

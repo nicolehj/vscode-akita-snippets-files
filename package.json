@@ -3,7 +3,7 @@
   "publisher": "Nicole",
   "displayName": "Akita Snippets & File Templates",
   "description": "Akita Snippets and File Templates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "assets/images/icon.png",
   "engines": {
     "vscode": "^1.22.0"
@@ -38,7 +38,7 @@
         "akita.menu.prefix": {
           "type": "string",
           "default": "app",
-          "description": "Prefix of selector."
+          "description": "Prefix of selector. (Default is 'app')"
         },
         "akita.menu.style": {
           "type": "string",
@@ -51,7 +51,7 @@
         },
         "akita.menu.templatePath": {
           "type": "string",
-          "description": "Template path eg. 'src/templates'."
+          "description": "Template path. (eg. 'src/templates')"
         }
       }
     },
@@ -59,6 +59,10 @@
       {
         "command": "extension.akita-page",
         "title": "Akita Page"
+      },
+      {
+        "command": "extension.akita-component",
+        "title": "Akita Component"
       },
       {
         "command": "extension.akita-store",
@@ -80,16 +84,20 @@
           "group": "Akita"
         },
         {
-          "command": "extension.akita-store",
+          "command": "extension.akita-component",
           "group": "Akita@1"
         },
         {
-          "command": "extension.akita-query",
+          "command": "extension.akita-store",
           "group": "Akita@2"
         },
         {
-          "command": "extension.akita-service",
+          "command": "extension.akita-query",
           "group": "Akita@3"
+        },
+        {
+          "command": "extension.akita-service",
+          "group": "Akita@4"
         }
       ]
     }

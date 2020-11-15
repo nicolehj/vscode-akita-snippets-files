@@ -1,0 +1,23 @@
+import { Component, OnDestroy, OnInit } from '@angular/core';
+
+/**
+ * <%= classify(name) %> component
+ *
+ * @export
+ * @class <%= classify(name) %>Component
+ * @implements {OnInit}
+ * @implements {OnDestroy}
+ */
+@Component({
+  selector: '<%= prefix %>-<%= dasherize(name) %>',
+  templateUrl: './<%= dasherize(name) %>.component.html',
+  styleUrls: ['./<%= dasherize(name) %>.component.<%= style %>']
+})
+export class <%= classify(name) %>Component implements OnInit, OnDestroy {
+
+  constructor() { }
+
+  public ngOnInit() { }
+
+  public ngOnDestroy() { }
+}
