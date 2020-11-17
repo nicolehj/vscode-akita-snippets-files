@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { <%= classify(name) %>Component } from './pages/<%= dasherize(name) %>.component';
+import { <%= classify(name) %>RoutingModule } from './<%= dasherize(name) %>-routing.module';
 
 /**
  * <%= classify(name) %> module
@@ -11,8 +13,9 @@ import { <%= classify(name) %>Component } from './pages/<%= dasherize(name) %>.c
   declarations: [
     <%= classify(name) %>Component
   ],
-  entryComponents: [
-    <%= classify(name) %>Component
+  imports: [
+    CommonModule,
+    <%= classify(name) %>RoutingModule
   ]
 })
 export class <%= classify(name) %>Module { }
