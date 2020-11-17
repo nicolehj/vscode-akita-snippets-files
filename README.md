@@ -34,6 +34,7 @@ You can find multiple options been added to the context menu:
 | Menu Options |
 | :- |
 | Akita Page |
+| Akita Component |
 | Akita Store |
 | Akita Query |
 | Akita Service |

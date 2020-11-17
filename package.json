@@ -3,7 +3,7 @@
   "publisher": "Nicole",
   "displayName": "Akita Snippets & File Templates",
   "description": "Akita Snippets and File Templates",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "icon": "assets/images/icon.png",
   "engines": {
     "vscode": "^1.22.0"
