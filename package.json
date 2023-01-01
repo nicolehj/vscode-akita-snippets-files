@@ -122,7 +122,7 @@
     "@types/node": "^13.13.4",
     "@types/vscode": "^1.22.0",
     "copyfiles": "^2.2.0",
-    "ts-loader": "^7.0.2",
+    "ts-loader": "^9.4.2",
     "tslint": "^6.1.2",
     "tslint-config-airbnb": "^5.11.2",
     "typescript": "^3.8.3"
